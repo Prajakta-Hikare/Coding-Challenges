@@ -1,0 +1,16 @@
+#python code 
+size = int(input("Enter the size of array: "))
+L= []
+while True:
+    x = int(input("Enter a number: "))
+    L.append(x)
+    if len(L)==size:
+        break
+E,F=[],[]
+for i in L:
+    if i not in E:
+        E.append(i)
+        F.append(L.count(i))
+g = max(F)
+h = F.index(g)
+print(E[h],g)  #E[h]is the ID and g is the count
