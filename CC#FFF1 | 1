@@ -1,0 +1,9 @@
+#python code for odd even string
+def oddOrEven():
+    str = input("Enter a string:")
+    L = len(str)
+    if L%2==0:
+        print("TRUE")#since the length of string is even
+    else:
+        print("FALSE")#since the length of string is odd
+oddOrEven()        
