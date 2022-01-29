@@ -1,0 +1,24 @@
+size = int(input("Enter size of array between 1 to 50: "))
+L=[]
+while True:
+    x = int(input("Enter a number in array: "))
+    L.append(x)
+    if len(L)>=size:
+        break
+A=[]
+B=[]
+for i in L:
+	if i not in A:
+		A.append(i)
+		B.append(L.count(i))
+
+C=max(B) #all the elements will get equal to the number with maximum no. of frequency
+D=B.index(C)
+a=A[D]
+b=0
+for i in range(len(L)):
+	if a!=L[i]:
+		L[i]=a
+		b+=1
+		
+print("Total no. of operations peformed:",b)
